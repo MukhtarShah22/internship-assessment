@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
+import ProductDetails from '../components/ProductDetails';
+
 
 function ProductPage() {
   const [product, setProduct] = useState(null);
@@ -27,7 +29,7 @@ function ProductPage() {
   return (
     <div>
       <h1>{product.title}</h1>
-      <p>{product.description}</p>
+      <ProductDetails product={product} />
     </div>
   );
 }
