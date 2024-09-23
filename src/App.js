@@ -8,10 +8,14 @@ function App() {
   return (
     <Router>
       <div className="App">
+      {/* Header component for consistent navigation */}
         <Header />
         <div className="container">
+      {/* Set up routes for the application */}
           <Routes>
+      {/* Route for the main product listing page */}
             <Route path="/" element={<ListingPage />} />
+      {/* Route for individual product pages, using URL parameters */}
             <Route path="/product/:id" element={<ProductPage />} />
           </Routes>
         </div>
