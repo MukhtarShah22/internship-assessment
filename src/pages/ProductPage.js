@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import ProductDetails from '../components/ProductDetails';
 
-
 function ProductPage() {
   const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
